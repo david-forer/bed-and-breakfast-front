@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom';
 // import Signup from ../actions/Signup
 
-const NavBar = ({ currentUser }) => {
+const NavBar = ({ currentUser, loggedIn }) => {
     return (
 
        <>
@@ -13,11 +13,11 @@ const NavBar = ({ currentUser }) => {
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/cafe">Cafe</Link></li>
                 <li><Link to="/attractions">Attractions</Link></li>
-               
+                <li><Link to="/menu/new">new</Link></li>
                 <li><Link to="/signup">Sign Up</Link></li>
                 <li><Link to="/login">Log In</Link></li>
-           
-                {/* <li>{currentUser ? <strong>Welcome  </strong> : ""}</li> */}
+                {/* { loggedIn ? <p>logged in as {currentUser.attributes.name }</p> : null} */}
+                
                 <li>{currentUser ? <Logout /> : null} </li>
            
             </ul>
@@ -29,7 +29,8 @@ const NavBar = ({ currentUser }) => {
 
 const mapStateToProps = ({ currentUser }) => {
     return {
-      currentUser     
+      currentUser,
+      loggedIn: !!currentUser
     }
   }
   
