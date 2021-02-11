@@ -1,4 +1,4 @@
-import { resetLoginForm } from './loginForm.js'
+import { resetLoginForm } from './loginForm'
 import { resetSignupForm} from './signupForm'
 
 
@@ -15,10 +15,11 @@ export const clearCurrentUser = () => {
     }
 }
   
-export const signup = (credentials, history) => {
+export const signup = (jump, history) => {
+  console.log( "this is props", jump)
     return dispatch => {
       const userInfo = {
-        user: credentials
+        user: jump
       }
       return fetch("http://localhost:3001/api/v1/signup", {
         credentials: "include",
@@ -35,6 +36,7 @@ export const signup = (credentials, history) => {
           } else {
             dispatch(setCurrentUser(response.data))
             dispatch(resetSignupForm())
+            console.log("this is the action", response.data)
             history.push('/')
           }
         })
@@ -43,7 +45,7 @@ export const signup = (credentials, history) => {
   }
 
 export const login = (credentials, history) => {
-    console.log(credentials)
+   
     return dispatch => {
 
         return fetch("http://localhost:3001/api/v1/login", {
@@ -75,6 +77,8 @@ export const logout = () => {
             credentials: "include",
             method: "DELETE"
         })
+
+        
     }
 }
 
