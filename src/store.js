@@ -6,6 +6,7 @@ import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
 import thunk from 'redux-thunk';
 import signupForm from './reducers/signupForm';
 import menu from './reducers/menu'
+import attractions from './reducers/attractions'
 
 const reducer = combineReducers({
   users: usersReducer,
@@ -13,7 +14,8 @@ const reducer = combineReducers({
   loginForm,
   signupForm,
   menuForm,
-  menu
+  menu,
+  attractions
   })
   
   const composeEnhancers = (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;

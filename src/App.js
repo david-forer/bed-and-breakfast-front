@@ -10,13 +10,15 @@ import Signup from './components/Signup';
 import Login from './components/Login';
 import Logout from './components/Logout';
 import NewMenu from './components/MenuForm';
-import {getMenu} from './actions/menu';
+import { getMenu } from './actions/menu';
+import { getAttractions } from './actions/attractions';
 
 class App extends React.Component {
 
   componentDidMount() {
     this.props.getCurrentUser();
     this.props.getMenu();
+    this.props.getAttractions();
   }
 
   render() {
@@ -44,4 +46,4 @@ const mapStateToProps = state => {
   })
 }
 
-export default connect(mapStateToProps, { getCurrentUser, getMenu })(App);
+export default connect(mapStateToProps, { getCurrentUser, getMenu, getAttractions })(App);
