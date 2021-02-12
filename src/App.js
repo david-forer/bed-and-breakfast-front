@@ -12,6 +12,7 @@ import Logout from './components/Logout';
 import NewMenu from './components/MenuForm';
 import { getMenu } from './actions/menu';
 import { getAttractions } from './actions/attractions';
+import  AttractionInput  from './components/AddAttractions';
 
 class App extends React.Component {
 
@@ -33,6 +34,7 @@ class App extends React.Component {
             <Route exact path="/cafe" component={Cafe} />
             <Route exact path="/menu/new" component={NewMenu} />
             <Route exact path="/attractions" component={Attractions} />
+            <Route exact path="/attractions/new" component={AttractionInput} />
             <Route exact path="/" render={() => loggedIn ? <> <Home /><Logout /></> : <Signup />} />
         </Switch>
       </Router>

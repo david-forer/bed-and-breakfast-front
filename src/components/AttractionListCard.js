@@ -4,7 +4,7 @@ const AttractionListCard = ({ attractions }) => {
   return (
       <div>
           <br></br>
-      {attractions.name.name}<br/>
+      {attractions.name}<br/>
       {attractions.description}<br/>
       {attractions.location}
     </div>

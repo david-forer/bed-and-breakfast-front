@@ -6,8 +6,8 @@ export default (state = initialState, action) => {
    
         case "SET_ATTRACTIONS":
             return action.attractions;
-        case "ADD_ATTRACTION":
-            return state.concat(action.attractions);
+            case 'ADD_ATTRACTION':
+            return {...state, accounts: [...state.accounts, action.payload]};
         case "CLEAR_ATTRACTIONS":
             return initialState;
         default:
