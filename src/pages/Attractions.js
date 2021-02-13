@@ -1,12 +1,32 @@
 import React from 'react'
+import Hero from "../components/Hero";
+import Banner from "../components/Banner";
 import AttractionList from '../components/AttractionList'
 
 const Attractions = () => {
     return (
-        <div>
-            <h1>Attractions Page</h1> 
-            <AttractionList />
+        <>
+            <div>
+        <Hero hero="cafeHero">
+          <Banner
+            title="Nearby Attractions"
+            subtitle="A list of things to see and do in Bocas Del Toro"
+          >
+            {/* <Link to="/rooms" className="btn-primary">
+            Our Rooms
+          </Link> */}
+          </Banner>
+        </Hero>
+        <h1 className="font-bold text-center p-8 bg-gray-200">Attractions Page</h1> 
+        <div className="grid grid-cols-2 mt-8">
+        <AttractionList />
         </div>
+      </div>
+        <div>
+            
+            
+            </div>
+        </>
     )
 }
 
