@@ -34,7 +34,7 @@ export default class Amenities extends Component {
   render() {
     return (
       <section className="amenities">
-        <Title title="amenities" />
+        <Title title="AMENITIES" />
         <div className="amenities-center">
           {this.state.amenities.map((item) => {
             return (
