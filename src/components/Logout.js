@@ -5,8 +5,8 @@ import { logout } from '../actions/currentUser'
 const Logout = ({  logout }) => {
   
     return (
-        <form onSubmit={logout}>
-            <input type="submit" value="Log Out" />
+        <form  onSubmit={logout}>
+            <input className="bg-gray-200 font-bold" type="submit" value="Log Out" />
         </form>
     )
 }
