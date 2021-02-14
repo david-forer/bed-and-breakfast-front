@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../components/Hero'
 import Banner from '../components/Banner'
 import Amenities from '../components/Amenities'
+import Rooms from '../components/Rooms'
 // import { Link } from 'react-router-dom'
 
 function Home(props) {
@@ -17,7 +18,8 @@ function Home(props) {
           </Link> */}
         </Banner>
             </Hero>
-            <Amenities />
+        <Amenities />
+        <Rooms />
         </>
     );
 }
