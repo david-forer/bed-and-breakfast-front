@@ -32,7 +32,7 @@ class AttractionInput extends React.Component {
           <div className="text-center">
           <div className="xl:w-full border-b border-gray-300 py-5 mt-20">
             <div className="flex items-center w-11/12 mx-auto">
-              <p className="text-lg text-gray-800 font-bold">
+              <p className="text-2xl text-gray-800 font-bold text-indigo-500">
                 Attraction Information
               </p>
               <div className="ml-2 cursor-pointer text-gray-600 "></div>
@@ -59,7 +59,7 @@ class AttractionInput extends React.Component {
             className="w-1/2 px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500 mb-4"
           />
           <br />
-          <label  className="pb-2 text-sm font-bold text-gray-800">Attraction Location: </label>
+          <label  className="pb-2 text-sm font-bold text-gray-800 ">Attraction Location: </label>
           <input
             type="text"
             placeholder="Location"

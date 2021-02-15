@@ -9,39 +9,39 @@ export default class Amenities extends Component {
         icon: <FaCoffee />,
         title: "Free Breakfast",
         info:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, asperiores.",
+          "We offer a full breakfast when you stay with us. Not just coffee and old donuts. Get filled up for the big day!",
       },
       {
         icon: <FaHiking />,
         title: "Outdoor activities",
         info:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, asperiores.",
+          "Hiking, Biking, Surfing, Boating, Scuba Diving or Snorkeling.",
       },
       {
         icon: <FaShuttleVan />,
         title: "Shuttle from Airport",
         info:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, asperiores.",
+          "We have a boat that picks you up right by the airport and you are only 10 minutes away.",
       },
       {
         icon: <FaBeer />,
         title: "Free Happy Hour",
         info:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, asperiores.",
+          "That is right. Everyday at 5 we put out beers and wine with snacks for you toenjoy while watching the ocean.",
       },
     ],
   };
   render() {
     return (
-      <section className="amenities">
+      <section className="amenities p-12 bg-gray-100 tracking-wide text-center">
         <Title title="AMENITIES" />
-        <div className="amenities-center">
+        <div className="amenities-center grid lg:grid-cols-4 gap-16 sm:grid-cols-1 md:grid-cols-2 border-red-500">
           {this.state.amenities.map((item) => {
             return (
-              <article key={`item-${item.title}`} className="amenity">
-                <span>{item.icon}</span>
-                <h6>{item.title}</h6>
-                <p>{item.info}</p>
+              <article key={`item-${item.title}`} className="">
+                <span className="text-indigo-400 text-5xl mb-6 inline-block">{item.icon}</span>
+                <h6 className="uppercase">{item.title}</h6>
+                <p className="md:m-8 sm:m-16">{item.info}</p>
               </article>
             );
           })}

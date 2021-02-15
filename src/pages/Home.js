@@ -2,7 +2,10 @@ import React from 'react';
 import Hero from '../components/Hero'
 import Banner from '../components/Banner'
 import Amenities from '../components/Amenities'
-import Rooms from '../components/Rooms'
+import Testimonials from '../components/Testimonials'
+import Slider from '../components/Slider'
+import { SliderData } from '../data/photos'
+
 // import { Link } from 'react-router-dom'
 
 function Home(props) {
@@ -19,7 +22,8 @@ function Home(props) {
         </Banner>
             </Hero>
         <Amenities />
-        <Rooms />
+        <Slider slides={SliderData} />
+        <Testimonials />
         </>
     );
 }

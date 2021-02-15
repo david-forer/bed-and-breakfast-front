@@ -10,13 +10,18 @@ const NavBar = ({ currentUser, loggedIn }) => {
 
       <>
         <nav className="flex justify-between ">
+        <div className="flex items-center flex-shrink-0 text-black mr-6">
+        <span className="font-bold text-xl">DECK Bed & Breakfast</span>
+    </div>
          
         <ul className="flex flex-start items-center mb-5 text-l font-semibold  md:mb-0 md:pl-8 md:ml-8  opacity-100">
-                <li className="hover:text-red-500 py-2 px-6 hover:bg-gray-100"><Link to="/">Home</Link></li>
+                <li className="hover:text-indigo-500 py-2 px-6"><Link to="/">Home</Link></li>
                 <li className="hover:text-indigo-500 py-2 px-6"><Link to="/cafe">Cafe</Link></li>
           <li className="hover:text-indigo-500 py-2 px-6"><Link to="/attractions">Attractions</Link></li>
             <li className="hover:text-indigo-500 py-2 px-6"><Link to="/attractions/new">Add Attraction</Link></li>
-            </ul>
+            <li className="hover:text-indigo-500 py-2 px-6"><Link to="/rooms">Rooms</Link></li>
+          </ul>
+  
           {/* <li><Link to="/menu/new">new</Link></li> */}
           <ul className="flex justify-end  mb-5 text-l font-semibold  md:mb-0 md:pl-8 md:ml-8 opacity-100 ">
           {/* <div></div> */}

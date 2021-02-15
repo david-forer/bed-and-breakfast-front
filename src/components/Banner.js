@@ -1,13 +1,15 @@
 import React from 'react'
 
-export default function Banner({children, title, subtitle}) {
+export default function Banner({ title, subtitle}) {
     return (
-        <div className="banner">
-            <h1>{title}</h1>
-            <div></div>
-            <p>{subtitle}</p>
-            {children}
+        <div className="banner text-center px-4">
             
-        </div>
+             <h1 className="text-white font-bold text-5xl p-2">{title}</h1>  
+            
+            <br></br>
+            <p className="text-xl text-white font-bold capitalize">{subtitle}</p>
+            {/* {children} */}
+         </div>   
+        
     )
 }

@@ -19,7 +19,7 @@ const Cafe = () => {
           </Link> */}
           </Banner>
               </Hero>
-              <h1 className="font-bold text-center p-8 bg-gray-100">Menu</h1> 
+              <h1 className="font-bold text-4xl leading-4 text-center  p-8 bg-gray-100 text-indigo-500">Menu</h1> 
 
         <div className="grid grid-cols-3 gap-4 mt-8 m-4">
           <Menu />
