@@ -6,7 +6,7 @@ const Logout = ({  logout }) => {
   
     return (
         <form  onSubmit={logout}>
-            <input className="bg-gray-200 font-bold hover:text-indigo-500" type="submit" value="Log Out" />
+            <input className="bg-white font-bold hover:text-indigo-500" type="submit" value="Log Out" />
         </form>
     )
 }
