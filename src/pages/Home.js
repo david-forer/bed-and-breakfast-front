@@ -13,8 +13,8 @@ function Home(props) {
         <>
             <Hero hero="defaultHero">
         <Banner
-          title="Jungalows in Bocas"
-          subtitle="deluxe rooms starting at 100. a night"
+          title="Jungalows in the Bocas"
+          subtitle="deluxe rooms starting at 100 a night"
         >
           {/* <Link to="/rooms" className="btn-primary">
             Our Rooms
