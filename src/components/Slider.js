@@ -18,7 +18,7 @@ const Slider = ({ slides }) => {
             <h2 className="text-3xl font-bold text-center">Check out some local pictures</h2>
             </div>
             
-        <section className='lg:mx-16 flex-column slider'>
+        <section className='lg:mx-32 flex-column slider'>
             
             < FaArrowAltCircleLeft className="left-arrow " onClick={previousSlide} />
             < FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
