@@ -97,7 +97,7 @@ export const getCurrentUser = () => {
             // alert(response.error)
           } else {
             dispatch(setCurrentUser(response.data))
-            
+            dispatch(resetLoginForm())
           }
         })
         .catch(console.log)

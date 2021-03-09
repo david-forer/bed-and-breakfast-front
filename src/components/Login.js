@@ -19,18 +19,18 @@ const Login = ({ loginFormData, updateLoginForm, login, history }) => {
   };
 
   return (
-    <div class="flex items-center mt-20  bg-white dark:bg-gray-900">
-      <div class="container mx-auto">
-        <div class="max-w-md mx-auto my-10">
-          <div class="text-center">
-            <h1 class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
+    <div className="flex items-center mt-20  bg-white dark:bg-gray-900">
+      <div className="container mx-auto">
+        <div className="max-w-md mx-auto my-10">
+          <div className="text-center">
+            <h1 className="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
               Log in
             </h1>
-            <p class="text-gray-500 dark:text-gray-400">
+            <p className="text-gray-500 dark:text-gray-400">
               Log in to access your account
             </p>
           </div>
-          <div class="m-7"></div>
+          <div className="m-7"></div>
           <form onSubmit={handleSubmit}>
             <input
               placeholder="email"
