@@ -66,7 +66,7 @@ const Signup = ({ signupFormData, updateSignupForm, signup, history }) => {
             />
           </form>
           <h1 className="font-bold text-2xl m-8">Or You can Login:</h1>
-          <Login />
+          <Login history={ history }/>
 
         </div>
       </div>
