@@ -6,7 +6,7 @@ const AttractionListCard = ({ attractions }) => {
     <div className="p-4">
  <h3 className="text-blue-800 font-bold">{attractions.name}</h3>
  <p>{attractions.description}</p><br/>
-    <p> The Cost is: ${attractions.location} yen</p> <br/>
+    <p> The Location is: {attractions.location} </p> <br/>
        
      </div> 
    </div>
