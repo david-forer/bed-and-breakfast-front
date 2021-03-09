@@ -6,7 +6,7 @@ import  Login from './Login'
 
 const Signup = ({ signupFormData, updateSignupForm, signup, history }) => {
   const handleInputChange = (event) => {
-    console.log(event.target.value);
+    
     const { name, value } = event.target;
     const updatedFormInfo = {
       ...signupFormData,
@@ -16,7 +16,7 @@ const Signup = ({ signupFormData, updateSignupForm, signup, history }) => {
   };
 
   const handleSubmit = (event) => {
-    console.log("A name was submitted: ", event);
+   
     event.preventDefault();
     signup(signupFormData, history);
   };

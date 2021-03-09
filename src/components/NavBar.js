@@ -18,8 +18,9 @@ const NavBar = ({ currentUser, loggedIn }) => {
         <ul className="flex flex-start items-center mb-5 text-l font-semibold  md:mb-0 md:pl-8 md:ml-8  ">
                 <li className="hover:text-indigo-500 py-2 px-6"><Link to="/">Home</Link></li>
                 <li className="hover:text-indigo-500 py-2 px-6"><Link to="/cafe">Cafe</Link></li>
-          <li className="hover:text-indigo-500 py-2 px-6"><Link to="/attractions">Attractions</Link></li>
-            <li className="hover:text-indigo-500 py-2 px-6"><Link to="/attractions/new">Add Attraction</Link></li>
+              <li className="hover:text-indigo-500 py-2 px-6"><Link to="/attractions">Attractions</Link></li>
+              {currentUser ? <li className="hover:text-indigo-500 py-2 px-6"><Link to="/attractions/new">Add Attraction</Link></li> : null}
+            
             <li className="hover:text-indigo-500 py-2 px-6"><Link to="/rooms">Rooms</Link></li>
           </ul>
   
