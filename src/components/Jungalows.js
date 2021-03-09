@@ -7,7 +7,7 @@ const Rooms = () => {
     <div>
       {RoomData.map((roomDetail) => {
         return (
-          <div className="border m-12 p-4 rounded-lg shadow-lg">
+          <div className="border border-indigo-200 m-12 p-4 rounded-lg shadow-lg">
             <h1 className="mb-12 font-bold">{roomDetail.name}</h1>
             <div className="m-4">
               <p className="m-4">
@@ -21,12 +21,16 @@ const Rooms = () => {
                 <span className="font-bold p-4">Room Description:</span>{" "}
                 {roomDetail.description}
               </p>
+              <p className="m-4">
+                <span className="font-bold p-4">Extras:</span>{" "}
+                {roomDetail.extras}
+              </p>
             </div>
             {/* <img src={roomDetail.image} width="100" height="100" alt='' /> */}
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 border bg-gray-100 mt-12 rounded-lg ">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 border border-indigo-200 bg-gray-100 mt-12 rounded-lg ">
               <div>
                 <img
-                  className="h-48 w-full object-cover md:w-48 m-8 rounded-lg"
+                  className="h-48 w-full object-cover md:w-48 m-8 rounded-lg "
                   src={roomDetail.image}
                   alt="pic"
                 ></img>
