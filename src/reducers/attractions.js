@@ -7,7 +7,7 @@ export default (state = initialState, action) => {
         case "SET_ATTRACTIONS":
             return action.attractions;
         case "ADD_ATTRACTION":
-            return {...state, attractions: [...state, action.payload]};
+            return {...state, attractions: [...state, action.payload.data]};
         case "CLEAR_ATTRACTIONS":
             return initialState;
         default:

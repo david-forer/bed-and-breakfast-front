@@ -17,6 +17,7 @@ class AttractionInput extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
+    this.props.history.push('/')
     this.props.addAttraction(this.state);
     this.setState({
       name: "",
